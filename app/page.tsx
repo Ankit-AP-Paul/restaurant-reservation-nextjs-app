@@ -16,3 +16,5 @@ export default function Home() {
     </main>
   );
 }
+
+// supabase password: yX5wWPlZV2Ti3fRX

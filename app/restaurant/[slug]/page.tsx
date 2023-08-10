@@ -43,7 +43,6 @@ export default async function RestaurantDetails({
   params: { slug: string };
 }) {
   const restaurant = await fetchRestaurantBySlug(params.slug);
-  console.log(restaurant);
 
   return (
     <>
@@ -52,7 +51,7 @@ export default async function RestaurantDetails({
         <Title name={restaurant.name} />
         <Rating />
         <Description description={restaurant.description} />
-        <Images />
+        <Images images={restaurant.images} />
         <Reviews />
       </div>
       <div className="w-[27%] relative text-reg">

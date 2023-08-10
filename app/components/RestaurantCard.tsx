@@ -10,7 +10,7 @@ export default function RestaurantCard({ restaurant }: Props) {
   // console.log(restaurant);
 
   return (
-    <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">
+    <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer transition-shadow duration-300 hover:shadow-2xl">
       <Link href={`/restaurant/${restaurant.slug}`}>
         <img src={restaurant.main_image} alt="" className="w-full h-36" />
         <div className="p-1">

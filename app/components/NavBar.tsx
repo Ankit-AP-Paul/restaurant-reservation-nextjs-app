@@ -4,7 +4,10 @@ export default function NavBar() {
   return (
     <nav className="bg-white p-2 flex justify-between">
       <Link href="/" className="font-bold text-gray-700 text-2xl">
-        The Urban Spoon
+        <div className="flex flex-wrap">
+          <img src="assets/icon.png" alt="" className="h-10 mr-4 " />
+          The Urban Spoon
+        </div>
       </Link>
       <div>
         <div className="flex">

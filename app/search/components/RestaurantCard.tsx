@@ -21,9 +21,9 @@ export default function RestaurantCard({
 }) {
   const renderRating = () => {
     const rating = calculateReviewRatingAvg(restaurant.reviews);
-    if (rating > 4) return "Awesome";
-    else if (rating <= 4 && rating > 3) return "Good";
-    else if (rating <= 3 && rating > 0) return "Average";
+    if (rating > "4") return "Awesome";
+    else if (rating <= "4" && rating > "3") return "Good";
+    else if (rating <= "3" && rating > "0") return "Average";
     else return "";
   };
   return (

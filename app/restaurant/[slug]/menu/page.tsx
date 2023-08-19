@@ -15,7 +15,7 @@ const fetchRestaurantMenu = async (slug: string) => {
     },
   });
   if (!restaurant) {
-    throw new Error();
+    throw new Error("Can't find a restaurant");
   }
   return restaurant.items;
 };

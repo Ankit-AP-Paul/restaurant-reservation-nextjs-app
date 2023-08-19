@@ -14,6 +14,7 @@ const fetchRestaurantsByCity = (city: string | undefined) => {
     cuisine: true,
     locaton: true,
     slug: true,
+    reviews: true,
   };
 
   if (!city) return prisma.restaurant.findMany({ select });

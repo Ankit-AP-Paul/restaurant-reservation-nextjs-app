@@ -23,7 +23,6 @@ export default function RootLayout({
           <main className="max-w-screen-2xl m-auto bg-white">
             <NavBar />
             {children}
-            <Footer />
           </main>
         </main>
       </body>

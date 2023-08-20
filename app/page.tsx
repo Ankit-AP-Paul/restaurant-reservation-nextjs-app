@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import RestaurantCard from "./components/RestaurantCard";
 import { PrismaClient, Cuisine, Location, PRICE, Review } from "@prisma/client";
@@ -44,6 +45,7 @@ export default async function Home() {
         ))}
       </div>
       {/* CARDS */}
+      <Footer />
     </main>
   );
 }

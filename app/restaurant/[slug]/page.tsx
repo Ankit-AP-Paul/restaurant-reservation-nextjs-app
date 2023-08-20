@@ -8,6 +8,7 @@ import Reviews from "./components/Reviews";
 import ReservationCard from "./components/ReservationCard";
 import { PrismaClient, Review } from "@prisma/client";
 import { notFound } from "next/navigation";
+import Footer from "@/app/components/Footer";
 
 const prisma = new PrismaClient();
 
@@ -57,6 +58,7 @@ export default async function RestaurantDetails({
         <Images images={restaurant.images} />
         <Reviews reviews={restaurant.reviews} />
       </div>
+
       <div className="w-[27%] relative text-reg">
         <ReservationCard />
       </div>

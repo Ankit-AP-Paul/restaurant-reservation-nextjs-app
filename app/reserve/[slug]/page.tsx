@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Footer from "@/app/components/Footer";
 
 export default function Reserve() {
   return (
@@ -7,6 +8,7 @@ export default function Reserve() {
       <div className="py-9 w-3/5 m-auto">
         <Header />
         <Form />
+        <Footer />
       </div>
     </div>
   );

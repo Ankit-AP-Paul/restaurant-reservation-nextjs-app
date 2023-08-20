@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import SearchSideBar from "./components/SearchSideBar";
 import RestaurantCard from "./components/RestaurantCard";
 import { PRICE, PrismaClient } from "@prisma/client";
+import Footer from "../components/Footer";
 
 const prisma = new PrismaClient();
 
@@ -67,6 +68,7 @@ export default async function Search({
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

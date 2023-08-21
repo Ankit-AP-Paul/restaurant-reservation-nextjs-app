@@ -24,7 +24,6 @@ export default async function Header({ name }: { name: string }) {
     return nameArr.join(" ");
   };
   const mainImage = await fetchMainImage(name);
-  console.log(mainImage);
 
   return (
     <div className="h-96 overflow-hidden">
